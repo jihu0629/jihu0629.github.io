@@ -249,7 +249,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
 .s-works-head h2{font-family:var(--font-serif);font-weight:300;font-size:clamp(32px,4vw,54px);line-height:1;letter-spacing:-.025em;flex:1;min-width:260px}
 .s-works-head h2 em{font-style:italic;color:var(--accent)}
 .s-works-head .lead{font-family:var(--font-serif);font-weight:300;font-style:italic;font-size:clamp(13px,1.1vw,15px);line-height:1.5;color:var(--mute);max-width:340px}
-.works-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;width:100%}
+.works-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;width:100%;max-width:720px}
 .work-card{display:flex;flex-direction:column;gap:10px;cursor:pointer;text-decoration:none;color:inherit}
 .work-card .wc-img{aspect-ratio:4/5;overflow:hidden;position:relative;background:var(--surface)}
 .work-card .wc-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ee);display:block;filter:saturate(.88)}
@@ -545,30 +545,6 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
           <span class="desc">Numerical Analysis 수업에서 진행한 계산 프로젝트 모음.</span>
           <span class="yr">2026</span>
         </a>
-        <a class="s-index-row reveal">
-          <span class="num">03 &mdash;</span>
-          <span class="ttl"><em>구조</em> 해석 과제</span>
-          <span class="desc">[예: 보/트러스 구조의 응력·변형 해석 과제]</span>
-          <span class="yr">2026</span>
-        </a>
-        <a class="s-index-row reveal">
-          <span class="num">04 &mdash;</span>
-          <span class="ttl"><em>공력</em> 시뮬레이션</span>
-          <span class="desc">[예: 익형(airfoil) 양력/항력 계산 프로젝트]</span>
-          <span class="yr">2026</span>
-        </a>
-        <a class="s-index-row reveal">
-          <span class="num">05 &mdash;</span>
-          <span class="ttl">개인 <em>프로젝트</em></span>
-          <span class="desc">[혼자 진행한 코드/시뮬레이션 프로젝트 설명]</span>
-          <span class="yr">2026</span>
-        </a>
-        <a class="s-index-row reveal">
-          <span class="num">06 &mdash;</span>
-          <span class="ttl">[프로젝트 <em>제목</em>]</span>
-          <span class="desc">[한 줄 설명을 적어주세요]</span>
-          <span class="yr">2026</span>
-        </a>
       </div>
     </div>
   </section>
@@ -595,7 +571,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
   </section>
 
   <!-- ============ 6. SELECTED WORKS ============ -->
-  <section class="slide" data-section="Selected works" data-sub="Four projects">
+  <section class="slide" data-section="Selected works" data-sub="Projects">
     <div class="slide-inner s-works">
       <div class="s-works-head">
         <h2 class="reveal">Selected <em>projects</em></h2>
@@ -615,20 +591,6 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
           <div class="wc-title">수치<em>해석</em></div>
           <p class="wc-desc">Numerical Analysis 수업 과제. Python/MATLAB으로 수치 계산 문제를 구현했습니다.</p>
           <span class="wc-link">GitHub에서 보기 &rarr;</span>
-        </a>
-        <a class="work-card reveal">
-          <div class="wc-img"><img src="images/selected-work-02.jpg" alt="Structures project — replace with your own image"></div>
-          <div class="wc-meta"><span class="num">No. 03</span><span>Structures</span></div>
-          <div class="wc-title">구조 <em>해석</em></div>
-          <p class="wc-desc">[구조 관련 과제/프로젝트 설명을 적어주세요]</p>
-          <span class="wc-link">자세히 보기 &rarr;</span>
-        </a>
-        <a class="work-card reveal">
-          <div class="wc-img"><img src="images/selected-work-03.jpg" alt="Aerodynamics project — replace with your own image"></div>
-          <div class="wc-meta"><span class="num">No. 04</span><span>Aerodynamics</span></div>
-          <div class="wc-title">공력 <em>시뮬레이션</em></div>
-          <p class="wc-desc">[공기역학 관련 과제/프로젝트 설명을 적어주세요]</p>
-          <span class="wc-link">자세히 보기 &rarr;</span>
         </a>
       </div>
     </div>
