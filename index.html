@@ -201,8 +201,9 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
 .s-plate-image{position:relative;overflow:hidden;background:var(--surface)}
 .s-plate-image img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.05);transition:transform 2.4s var(--ee);filter:saturate(.85) contrast(1.04)}
 .slide.active .s-plate-image img{transform:scale(1)}
-.s-plate-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,31,58,.35) 0%,transparent 30%,transparent 60%,rgba(45,31,58,.55) 100%);pointer-events:none}
-.s-plate-caption{position:absolute;bottom:90px;left:36px;right:36px;display:flex;justify-content:space-between;align-items:flex-end;color:var(--paper);z-index:3;gap:40px}
+.s-plate-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,27,46,.35) 0%,transparent 25%,rgba(11,27,46,.6) 55%,rgba(11,27,46,.94) 100%);pointer-events:none}
+.s-plate-caption{position:absolute;bottom:90px;left:36px;right:36px;display:flex;justify-content:space-between;align-items:flex-end;color:var(--ink);z-index:3;gap:40px}
+.s-plate-caption a{color:inherit;text-decoration:underline;text-underline-offset:3px}
 .s-plate-caption .ttl{font-family:var(--font-serif);font-style:italic;font-weight:300;font-size:clamp(36px,5vw,72px);line-height:1;letter-spacing:-.02em;max-width:14ch}
 .s-plate-caption .meta{font-family:var(--font-mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;display:flex;flex-direction:column;gap:6px;text-align:right;flex-shrink:0;min-width:160px}
 .s-plate-caption .meta strong{font-weight:500;font-size:13px;letter-spacing:.15em;color:var(--accent-soft)}
@@ -498,24 +499,24 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
       <div class="s-plate-frame">
         <div class="s-plate-top">
           <span><strong>Project I</strong> &middot; Featured Project</span>
-          <span>[프로젝트/과제명을 입력하세요]</span>
+          <span>Aerodrone Hackathon &middot; 해안쓰레기 드론 조사·수거계획</span>
         </div>
         <div class="s-plate-image">
-          <img src="images/featured-pic-01.jpg" alt="Featured project cover image — replace with your own">
+          <img src="images/aerodrone-featured.jpg" alt="문갑도 해안쓰레기 수거 작업 지도 — 정사영상 위 13개 구역과 지형 최단경로">
         </div>
         <div class="s-plate-bot">
-          <span>Tool &middot; [MATLAB / Python / ANSYS 등]</span>
+          <span>Tool &middot; Python · Sentinel-2 · OpenDrift · PX4 · Leaflet</span>
           <span>2026</span>
           <span>03 / 08</span>
         </div>
       </div>
       <div class="s-plate-caption">
-        <h2 class="ttl">가장 애정있게 진행한 <em>프로젝트</em> 한 줄 소개.</h2>
+        <h2 class="ttl">어디를 날지 고르고, <em>얼마나</em> 치울지 계산한다.</h2>
         <div class="meta">
           <strong>Project I</strong>
-          <span>[분야: 구조/공력]</span>
-          <span>[수업명 또는 개인 프로젝트]</span>
-          <span>2026</span>
+          <span>드론 경로 최적화 · 수거계획 알고리즘</span>
+          <span>2026 항공·드론 산업 수요 기반 해커톤 (팀 드론대장 붕붕이)</span>
+          <span><a href="https://github.com/jihu0629/Aerodrone-Hackaton" target="_blank" rel="noopener">GitHub</a> · <a href="https://jihu0629.github.io/Aerodrone-Hackaton/" target="_blank" rel="noopener">수거계획 데모</a> · <a href="website/" target="_blank" rel="noopener">결과 지도</a></span>
         </div>
       </div>
     </div>
@@ -532,34 +533,34 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
         </div>
       </div>
       <div class="s-index-list">
-        <a class="s-index-row reveal" href="https://github.com/jihu0629/Numerial_Analysis" target="_blank" rel="noopener">
+        <a class="s-index-row reveal" href="https://github.com/jihu0629/Aerodrone-Hackaton" target="_blank" rel="noopener">
           <span class="num">01 &mdash;</span>
+          <span class="ttl">해안쓰레기 <em>드론</em> 파이프라인</span>
+          <span class="desc">항공·드론 해커톤. 해류·위성 기반 비행 경로 최적화 → 드론 3D 무게 추정 → 수거계획 알고리즘.</span>
+          <span class="yr">2026</span>
+        </a>
+        <a class="s-index-row reveal" href="https://github.com/jihu0629/Numerial_Analysis" target="_blank" rel="noopener">
+          <span class="num">02 &mdash;</span>
           <span class="ttl">수치<em>해석</em> 과제</span>
           <span class="desc">Numerical Analysis 수업에서 진행한 계산 프로젝트 모음.</span>
           <span class="yr">2026</span>
         </a>
         <a class="s-index-row reveal">
-          <span class="num">02 &mdash;</span>
+          <span class="num">03 &mdash;</span>
           <span class="ttl"><em>구조</em> 해석 과제</span>
           <span class="desc">[예: 보/트러스 구조의 응력·변형 해석 과제]</span>
           <span class="yr">2026</span>
         </a>
         <a class="s-index-row reveal">
-          <span class="num">03 &mdash;</span>
+          <span class="num">04 &mdash;</span>
           <span class="ttl"><em>공력</em> 시뮬레이션</span>
           <span class="desc">[예: 익형(airfoil) 양력/항력 계산 프로젝트]</span>
           <span class="yr">2026</span>
         </a>
         <a class="s-index-row reveal">
-          <span class="num">04 &mdash;</span>
+          <span class="num">05 &mdash;</span>
           <span class="ttl">개인 <em>프로젝트</em></span>
           <span class="desc">[혼자 진행한 코드/시뮬레이션 프로젝트 설명]</span>
-          <span class="yr">2026</span>
-        </a>
-        <a class="s-index-row reveal">
-          <span class="num">05 &mdash;</span>
-          <span class="ttl">[프로젝트 <em>제목</em>]</span>
-          <span class="desc">[한 줄 설명을 적어주세요]</span>
           <span class="yr">2026</span>
         </a>
         <a class="s-index-row reveal">
@@ -598,35 +599,35 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
     <div class="slide-inner s-works">
       <div class="s-works-head">
         <h2 class="reveal">Selected <em>projects</em></h2>
-        <p class="lead reveal">이번 학기와 개인적으로 진행한 프로젝트 네 가지입니다. 각 카드를 원하는 깃허브 저장소나 상세 페이지로 연결하세요.</p>
+        <p class="lead reveal">해커톤과 수업, 개인적으로 진행한 프로젝트입니다. 카드를 누르면 GitHub 저장소로 이동합니다.</p>
       </div>
       <div class="works-grid">
+        <a class="work-card reveal" href="https://github.com/jihu0629/Aerodrone-Hackaton" target="_blank" rel="noopener">
+          <div class="wc-img"><img src="images/aerodrone-card.jpg" alt="니하우섬 위성 해안 형상 점수와 우선 구간 코리더 비행 경로"></div>
+          <div class="wc-meta"><span class="num">No. 01</span><span>Hackathon</span></div>
+          <div class="wc-title">드론 <em>경로</em> 최적화</div>
+          <p class="wc-desc">위성 해안 형상·해류로 쓰레기가 쌓이는 구간을 골라, 해안 30 %만 날아도 쓰레기의 65 %를 찾는 비행 경로와 수거계획을 만들었습니다.</p>
+          <span class="wc-link">GitHub에서 보기 &rarr;</span>
+        </a>
         <a class="work-card reveal" href="https://github.com/jihu0629/Numerial_Analysis" target="_blank" rel="noopener">
           <div class="wc-img"><img src="images/selected-work-01.jpg" alt="Numerical Analysis project — replace with your own image"></div>
-          <div class="wc-meta"><span class="num">No. 01</span><span>Coursework</span></div>
+          <div class="wc-meta"><span class="num">No. 02</span><span>Coursework</span></div>
           <div class="wc-title">수치<em>해석</em></div>
           <p class="wc-desc">Numerical Analysis 수업 과제. Python/MATLAB으로 수치 계산 문제를 구현했습니다.</p>
           <span class="wc-link">GitHub에서 보기 &rarr;</span>
         </a>
         <a class="work-card reveal">
           <div class="wc-img"><img src="images/selected-work-02.jpg" alt="Structures project — replace with your own image"></div>
-          <div class="wc-meta"><span class="num">No. 02</span><span>Structures</span></div>
+          <div class="wc-meta"><span class="num">No. 03</span><span>Structures</span></div>
           <div class="wc-title">구조 <em>해석</em></div>
           <p class="wc-desc">[구조 관련 과제/프로젝트 설명을 적어주세요]</p>
           <span class="wc-link">자세히 보기 &rarr;</span>
         </a>
         <a class="work-card reveal">
           <div class="wc-img"><img src="images/selected-work-03.jpg" alt="Aerodynamics project — replace with your own image"></div>
-          <div class="wc-meta"><span class="num">No. 03</span><span>Aerodynamics</span></div>
+          <div class="wc-meta"><span class="num">No. 04</span><span>Aerodynamics</span></div>
           <div class="wc-title">공력 <em>시뮬레이션</em></div>
           <p class="wc-desc">[공기역학 관련 과제/프로젝트 설명을 적어주세요]</p>
-          <span class="wc-link">자세히 보기 &rarr;</span>
-        </a>
-        <a class="work-card reveal">
-          <div class="wc-img"><img src="images/selected-work-04.jpg" alt="Personal project — replace with your own image"></div>
-          <div class="wc-meta"><span class="num">No. 04</span><span>Personal</span></div>
-          <div class="wc-title">개인 <em>프로젝트</em></div>
-          <p class="wc-desc">[개인적으로 진행한 프로젝트를 소개해주세요]</p>
           <span class="wc-link">자세히 보기 &rarr;</span>
         </a>
       </div>
@@ -696,7 +697,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
             </div>
             <div class="row">
               <span class="lbl">Email</span>
-              <span class="val"><a href="mailto:your-email@example.com">your-email@example.com</a></span>
+              <span class="val"><a href="mailto:jihoo@inha.edu">jihoo@inha.edu</a></span>
             </div>
             <div class="row">
               <span class="lbl">GitHub</span>
@@ -705,7 +706,7 @@ body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;back
           </div>
           <div class="s-colophon-cta-btns">
             <a class="btn-primary" data-goto="1">Begin again &uarr;</a>
-            <a class="btn-secondary" href="mailto:your-email@example.com">Contact me</a>
+            <a class="btn-secondary" href="mailto:jihoo@inha.edu">Contact me</a>
           </div>
         </div>
       </div>
