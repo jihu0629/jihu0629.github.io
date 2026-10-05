@@ -6,7 +6,7 @@ Jihu — Aerospace Engineering Portfolio · <https://jihu0629.github.io/>
 
 | 프로젝트 | 내용 | 링크 |
 |---|---|---|
-| 해안쓰레기 드론 파이프라인 (2026 항공·드론 해커톤) | 해류·위성 기반 드론 비행 경로 최적화 → 드론 3D 무게 추정 → 수거계획 알고리즘 | [저장소](https://github.com/jihu0629/Aerodrone-Hackaton) |
+| 해안쓰레기 드론 파이프라인 (2026 항공·드론 해커톤) | 해류·위성 기반 드론 비행 경로 최적화 → 드론 3D 무게 추정 → 수거계획 알고리즘 | [저장소](https://github.com/jihu0629/Aerodrone-Hackathon) |
 | 수치해석 | Numerical Analysis 수업 과제 | [저장소](https://github.com/jihu0629/Numerial_Analysis) |
 
 ## 구성
